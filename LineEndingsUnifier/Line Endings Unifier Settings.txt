@@ -1,0 +1,2 @@
+.h; .c; .hpp; .cpp; .cmake; .sh; .md; .json
+Dockerfile; CMakeLists.txt
