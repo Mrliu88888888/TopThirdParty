@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>#wregion</Title>
+			<Shortcut>#wregion</Shortcut>
+			<Description>仅生效于Win32环境下的折叠代码</Description>
+			<Author>LiuMeng</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>区域名</ToolTip>
+					<Default>MyWRegion</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp"><![CDATA[#ifdef _WIN32
+				#pragma region $name$
+				#endif
+				$selected$ $end$ 
+				#ifdef _WIN32
+				#pragma endregion
+				#endif]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
