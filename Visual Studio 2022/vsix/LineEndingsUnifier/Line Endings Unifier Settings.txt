@@ -1,2 +1,2 @@
-.h; .c; .hpp; .cpp; .cmake; .sh; .md; .json
+.h.in; .h; .c; .hpp; .cpp; .cmake; .sh; .md; .json; .ini; .qml; .csv
 Dockerfile; CMakeLists.txt
